@@ -15,9 +15,9 @@ import utilities.JDBCUtils;
 public class CourseworkProjectDAOImpl implements CourseworkProjectDAO {
 
     private static final String INSERT_COURSEWORK_SQL = "INSERT INTO coursework_projects"
-            + "  (coursework_title,module_title,user_id,intended_due_date,actual_completion_date,is_done) VALUES " + " (?, ?, ?, ?, ?, ?);";
+            + "  (courseworkTitle,moduleTitle,user_id,intended_due_date,actual_completion_date,is_done) VALUES " + " (?, ?, ?, ?, ?, ?);";
 
-    private static final String SELECT_COURSEWORK_BY_ID = "SELECT id,coursework_title,module_title,user_id,intended_due_date,actual_completion_date,is_done FROM coursework_projects where id =?";
+    private static final String SELECT_COURSEWORK_BY_ID = "SELECT id,courseworkTitle,moduleTitle,user_id,intended_due_date,actual_completion_date,is_done FROM coursework_projects where id =?";
     private static final String SELECT_ALL_COURSEWORKS = "SELECT * FROM coursework_projects";
     private static final String DELETE_COURSEWORK_BY_ID = "DELETE FROM coursework_projects where id = ?;";
     private static final String UPDATE_COURSEWORK = "UPDATE coursework_projects set coursework_title = ?, module_title= ?, user_id =?, intended_due_date =?, actual_completion_date =?, is_done = ? where id = ?;";
@@ -34,9 +34,9 @@ public class CourseworkProjectDAOImpl implements CourseworkProjectDAO {
             preparedStatement.setString(1, coursework.getCourseworkTitle());
             preparedStatement.setString(2, coursework.getModuleTitle());
             preparedStatement.setInt(3, coursework.getUserID());
-            preparedStatement.setDate(4, JDBCUtils.getSQLDate(coursework.getIntendedDueDate()));
-            preparedStatement.setDate(4, JDBCUtils.getSQLDate(coursework.getActualCompletionDate()));
-            preparedStatement.setBoolean(5,coursework.getStatus());
+            preparedStatement.setString(4, JDBCUtils.getDateString(coursework.getIntendedDueDate()));
+            preparedStatement.setString(5, JDBCUtils.getDateString(coursework.getActualCompletionDate()));
+            preparedStatement.setBoolean(6,coursework.getStatus());
             System.out.println(preparedStatement);
             preparedStatement.executeUpdate();
         } catch (SQLException exception) {

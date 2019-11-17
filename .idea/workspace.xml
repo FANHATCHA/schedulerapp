@@ -7,9 +7,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1892f263-73f7-4146-b47c-8146f04f3325" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sql" beforeDir="false" afterPath="$PROJECT_DIR$/db.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DAOImpl/CourseworkProjectDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DAOImpl/CourseworkProjectDAOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/CourseworkProject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/CourseworkProject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utilities/JDBCUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utilities/JDBCUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/web/CourseworkController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/web/CourseworkController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/dashboard.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/dashboard.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -192,7 +197,7 @@
       <option name="presentableId" value="Default" />
       <updated>1573373160756</updated>
       <workItem from="1573373163619" duration="24697000" />
-      <workItem from="1573696945903" duration="40659000" />
+      <workItem from="1573696945903" duration="46597000" />
     </task>
     <servers />
   </component>

@@ -25,8 +25,8 @@
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script>
         $( function() {
-            $( "#intended-due-date" ).datepicker();
-            $( "#actual-completion-date" ).datepicker();
+            $( "#intended-due-date" ).datepicker({altFormat: "yyyy-mm-dd"});
+            $( "#actual-completion-date" ).datepicker({altFormat: "yyyy-mm-dd"});
         } );
     </script>
 </head>
@@ -93,7 +93,7 @@
                         <label for="module-title">Module title</label>
                     </div>
                     <div class="col-75">
-                        <input type="text" id="" name="module-title" placeholder="Module title">
+                        <input type="text" id="module-title" name="module-title" placeholder="Module title">
                     </div>
                 </div>
 

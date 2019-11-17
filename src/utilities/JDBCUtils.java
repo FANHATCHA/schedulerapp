@@ -1,10 +1,13 @@
 package utilities;
 
 import java.sql.Connection;
-import java.sql.Date;
+import java.util.Date;
 import java.sql.DriverManager;
 import java.sql.SQLException;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.time.LocalDate;
+import java.util.Calendar;
 
 public class JDBCUtils {
 
@@ -43,11 +46,28 @@ public class JDBCUtils {
 		}
 	}
 
-	public static Date getSQLDate(LocalDate date) {
-		return java.sql.Date.valueOf(date);
+//	public static Date getSQLDate(LocalDate date) {
+//		return java.sql.Date.valueOf(date);
+//	}
+
+	public static String getDateString(Calendar date){
+		SimpleDateFormat sdf = new SimpleDateFormat("mm/dd/yyyy");
+
+		return sdf.format(date.getTime());
 	}
 
-	public static LocalDate getUtilDate(Date sqlDate) {
-		return sqlDate.toLocalDate();
+	public static Calendar getDateCalendar(String dateString) throws ParseException {
+		Calendar cal = Calendar.getInstance();
+
+		SimpleDateFormat sdf = new SimpleDateFormat("mm/dd/yyyy");
+		Date date = sdf.parse(dateString);
+
+		cal.setTime(date);
+
+		return cal;
 	}
+
+//	public static LocalDate getUtilDate(Date sqlDate) {
+//		return sqlDate.toLocalDate();
+//	}
 }

@@ -51,15 +51,15 @@
         <url-pattern>/login-auth</url-pattern>
     </servlet-mapping>
 
-<!--    <servlet>-->
-<!--        <servlet-name>CourseworkProcessing</servlet-name>-->
-<!--        <servlet-class>UserDataProcessing.CourseworkProcessing</servlet-class>-->
-<!--    </servlet>-->
+    <servlet>
+        <servlet-name>CourseworkController</servlet-name>
+        <servlet-class>web.CourseworkController</servlet-class>
+    </servlet>
 
-<!--    <servlet-mapping>-->
-<!--        <servlet-name>CourseworkProcessing</servlet-name>-->
-<!--        <url-pattern>/save-coursework-project</url-pattern>-->
-<!--    </servlet-mapping>-->
+    <servlet-mapping>
+        <servlet-name>CourseworkController</servlet-name>
+        <url-pattern>/save-coursework-project</url-pattern>
+    </servlet-mapping>
 
 
 </web-app>

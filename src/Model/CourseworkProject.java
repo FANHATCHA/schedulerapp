@@ -1,13 +1,14 @@
 package Model;
 
 import java.time.LocalDate;
+import java.util.Calendar;
 
 public class CourseworkProject {
     private Long id;
     private String courseworkTitle;
     private String moduleTitle;
-    private LocalDate intendedDueDate;
-    private LocalDate actualCompletionDate;
+    private Calendar intendedDueDate;
+    private Calendar actualCompletionDate;
     private int userID;
     private boolean status;
 
@@ -15,7 +16,7 @@ public class CourseworkProject {
 
     }
 
-    public CourseworkProject(long id, String courseworkTitle, String moduleTitle, LocalDate intendedDueDate, LocalDate actualCompletionDate, int userID, boolean isDone) {
+    public CourseworkProject(long id, String courseworkTitle, String moduleTitle, Calendar intendedDueDate, Calendar actualCompletionDate, int userID, boolean isDone) {
         super();
         this.id = id;
         this.courseworkTitle = courseworkTitle;
@@ -26,7 +27,7 @@ public class CourseworkProject {
         this.status = isDone;
     }
 
-    public CourseworkProject(String courseworkTitle, String moduleTitle, LocalDate intendedDueDate, LocalDate actualCompletionDate, int userID, boolean isDone) {
+    public CourseworkProject(String courseworkTitle, String moduleTitle, Calendar intendedDueDate, Calendar actualCompletionDate, int userID, boolean isDone) {
         super();
         this.courseworkTitle = courseworkTitle;
         this.moduleTitle = moduleTitle;
@@ -60,19 +61,19 @@ public class CourseworkProject {
         this.moduleTitle = moduleTitle;
     }
 
-    public LocalDate getIntendedDueDate() {
+    public Calendar getIntendedDueDate() {
         return intendedDueDate;
     }
 
-    public void setIntendedDueDate(LocalDate intendedDueDate) {
+    public void setIntendedDueDate(Calendar intendedDueDate) {
         this.intendedDueDate = intendedDueDate;
     }
 
-    public LocalDate getActualCompletionDate() {
+    public Calendar getActualCompletionDate() {
         return actualCompletionDate;
     }
 
-    public void setActualCompletionDate(LocalDate actualCompletionDate) {
+    public void setActualCompletionDate(Calendar actualCompletionDate) {
         this.actualCompletionDate = actualCompletionDate;
     }
 

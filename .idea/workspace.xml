@@ -7,14 +7,36 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1892f263-73f7-4146-b47c-8146f04f3325" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/UserDataProcessing/DeleteCourseworkController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/UserDataProcessing/EditCourseworkController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/coursework-form.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/assets/css/auth.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sql" beforeDir="false" afterPath="$PROJECT_DIR$/db.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/DAOImpl/CourseworkProjectDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/DAOImpl/CourseworkProjectDAOImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/Model/CourseworkProject.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/Model/CourseworkProject.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/UserDataProcessing/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/UserDataProcessing/LoginController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/web/CourseworkController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/web/CourseworkController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/dashboard.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/dashboard.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/register.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/assets/css/dashboard.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/web_war_exploded/assets/css/dashboard.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/web_war_exploded/assets/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/web_war_exploded/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/app/DAOImpl/CourseworkProjectDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/app/DAOImpl/CourseworkProjectDAOImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/app/Model/CourseworkProject.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/app/Model/CourseworkProject.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/app/UserDataProcessing/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/app/UserDataProcessing/LoginController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/app/web/CourseworkController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/app/web/CourseworkController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/DAOImpl/CourseworkProjectDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DAOImpl/CourseworkProjectDAOImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Model/CourseworkProject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/CourseworkProject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utilities/JDBCUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utilities/JDBCUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UserDataProcessing/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UserDataProcessing/LoginController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/web/CourseworkController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/web/CourseworkController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/WEB-INF/dashboard.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/dashboard.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/register.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/assets/css/dashboard.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/css/dashboard.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.jsp" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -28,10 +50,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Jsp File" />
-        <option value="CSS File" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="CSS File" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -197,7 +219,9 @@
       <option name="presentableId" value="Default" />
       <updated>1573373160756</updated>
       <workItem from="1573373163619" duration="24697000" />
-      <workItem from="1573696945903" duration="46597000" />
+      <workItem from="1573696945903" duration="51867000" />
+      <workItem from="1574312380922" duration="6371000" />
+      <workItem from="1574496491147" duration="20773000" />
     </task>
     <servers />
   </component>
@@ -209,11 +233,29 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/web/WEB-INF/dashboard.jsp</url>
+          <line>134</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/web/WEB-INF/coursework-form.jsp</url>
+          <line>123</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/app$SchedulerApp.ic" NAME="SchedulerApp Coverage Results" MODIFIED="1573373899186" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

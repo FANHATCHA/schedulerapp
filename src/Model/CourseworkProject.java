@@ -116,5 +116,9 @@ public class CourseworkProject {
         return true;
     }
 
+    @Override
+    public String toString(){
+        return "Title" + this.courseworkTitle;
+    }
 
 }

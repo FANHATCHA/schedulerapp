@@ -61,5 +61,25 @@
         <url-pattern>/save-coursework-project</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>DeleteCourseworkController</servlet-name>
+        <servlet-class>UserDataProcessing.DeleteCourseworkController</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>DeleteCourseworkController</servlet-name>
+        <url-pattern>/delete-coursework-project</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>EditCourseworkController</servlet-name>
+        <servlet-class>UserDataProcessing.EditCourseworkController</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>EditCourseworkController</servlet-name>
+        <url-pattern>/edit-coursework-project</url-pattern>
+    </servlet-mapping>
+
 
 </web-app>

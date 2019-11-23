@@ -4,8 +4,10 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.text.ParseException;
 import java.time.LocalDate;
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.List;
 
 import DAO.CourseworkProjectDAO;
@@ -47,17 +49,75 @@ public class CourseworkProjectDAOImpl implements CourseworkProjectDAO {
 
     @Override
     public CourseworkProject selectCoursework(long courseworkId) {
-        return null;
+
+        CourseworkProject coursework = null;
+        // Step 1: Establishing a Connection
+        try (Connection connection = JDBCUtils.getConnection();
+             // Step 2:Create a statement using connection object
+             PreparedStatement preparedStatement = connection.prepareStatement(SELECT_COURSEWORK_BY_ID);) {
+            preparedStatement.setLong(1, courseworkId);
+            System.out.println(preparedStatement);
+            // Step 3: Execute the query or update query
+            ResultSet rs = preparedStatement.executeQuery();
+
+            // Step 4: Process the ResultSet object.
+            while (rs.next()) {
+                long id = rs.getLong("id");
+                String courseworkTitle = rs.getString("courseworkTitle");
+                String moduleTitle = rs.getString("moduleTitle");
+                int userID = rs.getInt("user_id");
+                Calendar intendedDueDate = JDBCUtils.getDateCalendar(rs.getString("intended_due_Date"));
+                Calendar actualCompletionDate = JDBCUtils.getDateCalendar(rs.getString("actual_completion_date"));
+                boolean isDone = rs.getBoolean("is_done");
+                coursework = new CourseworkProject(id, courseworkTitle, moduleTitle, intendedDueDate, actualCompletionDate, userID, isDone);
+            }
+        } catch (SQLException | ParseException exception) {
+            JDBCUtils.printSQLException((SQLException) exception);
+        }
+        return coursework;
     }
 
     @Override
-    public List<CourseworkProject> selectAllCourseworks() {
-        return null;
+    public List<CourseworkProject> selectAllCourseworks(){
+
+        // using try-with-resources to avoid closing resources (boiler plate code)
+        List<CourseworkProject> courseworks = new ArrayList<>();
+
+        // Step 1: Establishing a Connection
+        try (Connection connection = JDBCUtils.getConnection();
+
+             // Step 2:Create a statement using connection object
+             PreparedStatement preparedStatement = connection.prepareStatement(SELECT_ALL_COURSEWORKS );) {
+            System.out.println(preparedStatement);
+            // Step 3: Execute the query or update query
+            ResultSet rs = preparedStatement.executeQuery();
+
+            // Step 4: Process the ResultSet object.
+            while (rs.next()) {
+                long id = rs.getLong("id");
+                String courseworkTitle = rs.getString("courseworkTitle");
+                String moduleTitle = rs.getString("moduleTitle");
+                int userID = rs.getInt("user_id");
+                Calendar intendedDueDate = JDBCUtils.getDateCalendar(rs.getString("intended_due_Date"));
+                Calendar actualCompletionDate = JDBCUtils.getDateCalendar(rs.getString("actual_completion_date"));
+                boolean isDone = rs.getBoolean("is_done");
+                courseworks.add(new CourseworkProject(id, courseworkTitle, moduleTitle, intendedDueDate, actualCompletionDate, userID, isDone));
+            }
+        } catch (SQLException | ParseException exception) {
+            JDBCUtils.printSQLException((SQLException) exception);
+        }
+        return courseworks;
     }
 
     @Override
     public boolean deleteCoursework(int id) throws SQLException {
-        return false;
+        boolean rowDeleted;
+        try (Connection connection = JDBCUtils.getConnection();
+             PreparedStatement statement = connection.prepareStatement(DELETE_COURSEWORK_BY_ID);) {
+            statement.setInt(1, id);
+            rowDeleted = statement.executeUpdate() > 0;
+        }
+        return rowDeleted;
     }
 
     @Override

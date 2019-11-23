@@ -1,6 +1,9 @@
 package UserDataProcessing;
 
 import java.io.IOException;
+import java.io.PrintWriter;
+import java.util.Iterator;
+import java.util.List;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -10,7 +13,10 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+import DAO.CourseworkProjectDAO;
 import DAO.LoginDAO;
+import DAOImpl.CourseworkProjectDAOImpl;
+import Model.CourseworkProject;
 import Model.LoginBean;
 
 
@@ -19,9 +25,12 @@ import Model.LoginBean;
 public class LoginController extends HttpServlet {
     private static final long serialVersionUID = 1L;
     private LoginDAO loginDao;
+    private CourseworkProjectDAO courseworkProjectDAO;
 
     public void init() {
+
         loginDao = new LoginDAO();
+        courseworkProjectDAO = new CourseworkProjectDAOImpl();
     }
 
 
@@ -37,6 +46,10 @@ public class LoginController extends HttpServlet {
 
         try {
             if (loginDao.validate(loginBean)) {
+//                PrintWriter out = new PrintWriter(System.out);
+                List<CourseworkProject> listCoursework = courseworkProjectDAO.selectAllCourseworks();
+                request.setAttribute("listCoursework", listCoursework);
+                request.setAttribute("sizeOfCoursework", listCoursework.size());
                 RequestDispatcher dispatcher = request.getRequestDispatcher("WEB-INF/dashboard.jsp");
                 dispatcher.forward(request, response);
             } else {

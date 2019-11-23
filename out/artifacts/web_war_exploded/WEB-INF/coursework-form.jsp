@@ -1,12 +1,11 @@
 <%--
-Created by IntelliJ IDEA.
-User: 23058
-Date: 11/10/2019
-Time: 1:27 PM
-To change this template use File | Settings | File Templates.
+  Created by IntelliJ IDEA.
+  User: 23058
+  Date: 11/23/2019
+  Time: 9:07 PM
+  To change this template use File | Settings | File Templates.
 --%>
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-         pageEncoding="UTF-8"%>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <!Doctype html>
@@ -58,44 +57,74 @@ To change this template use File | Settings | File Templates.
 <main role="main" class="container">
     <div class="row">
         <div class="col-md-12">
-            <h3 class="pb-4 mb-4 font-italic border-bottom">
-                List of courseworks (<c:out value="${sizeOfCoursework}" />)
+            <h3>
+                Edit <c:if test="${coursework != null}"><c:out value='${coursework.courseworkTitle}' /></c:if>
             </h3>
+            <hr>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-3 col-md-6 col-lg-4">
+                        <h5>
+                            Summary of <c:if test="${coursework != null}"><c:out value='${coursework.courseworkTitle}' /></c:if>
+                        </h5>
+                        <ul>
+                            <li>Module title: <c:if test="${coursework != null}"><c:out value='${coursework.moduleTitle}' /></c:if></li>
+                            <li>Intended Due Date: 788</li>
+                            <li>Actual Completion Date: 788</li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-9 col-md-6 col-lg-8">
+                        <div class="container">
+                            <form action="/save-coursework-project" method="post">
+                                <div class="row">
+                                    <div class="col-25">
+                                        <label for="coursework-title">Title of coursework</label>
+                                    </div>
+                                    <div class="col-75">
+                                        <input type="text" id="coursework-title" name="coursework-title"
+                                               value="<c:out value='${coursework.courseworkTitle}' />"
+                                               required>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-25">
+                                        <label for="module-title">Module title</label>
+                                    </div>
+                                    <div class="col-75">
+                                        <input type="text" id="module-title" name="module-title"
+                                               value="<c:out value='${coursework.moduleTitle}' />"
+                                               required>
+                                    </div>
+                                </div>
 
-            <table class="table table-bordered">
-                <thead>
-                <tr>
-                    <th>Coursework Title</th>
-                    <th>Module Title</th>
-                    <th>Intended Completion Date</th>
-                    <th>Actual Completion Date</th>
-                    <th>Actions</th>
-                </tr>
-                </thead>
-                <tbody>
+                                <div class="row">
+                                    <div class="col-25">
+                                        <label for="intended-due-date">
+                                            Intended due date
+                                        </label>
+                                    </div>
+                                    <div class="col-25">
+                                        <input type="text" id="intended-due-date" name="intended-due-date" required>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-25">
+                                        <label for="actual-completion-date">Actual completion date</label>
+                                    </div>
+                                    <div class="col-25">
+                                        <input type="text" id="actual-completion-date" name="actual-completion-date" required>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <input type="submit" name="submit" value="Save Coursework">
+                                </div>
+                            </form>
 
-                <c:forEach var="coursework" items="${listCoursework}">
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-                    <tr>
-                        <td><c:out value="${coursework.courseworkTitle}" /></td>
-                        <td><c:out value="${coursework.moduleTitle}" /></td>
-                        <td>
-<%--                            <fmt:formatDate--%>
-<%--                                    pattern="mm/dd/yyyy"--%>
-<%--                                    value="${coursework.intendedDueDate}"--%>
-<%--                                    type="Calendar"--%>
-<%--                                    dateStyle="short" />--%>
-                        </td>
-                        <td>rti</td>
-                        <td>
-                            <a class="btn btn-success btn-sm" href="edit-coursework-project?id=<c:out value='${coursework.id}' />">Edit</a>
-                            &nbsp;&nbsp;&nbsp;&nbsp;
-                            <a class="btn btn-danger btn-sm" href="delete-coursework-project?id=<c:out value='${coursework.id}' />">Delete</a></td>
-                    </tr>
-                </c:forEach>
-                </tbody>
-
-            </table>
         </div><!-- /main -->
 
 
@@ -113,6 +142,8 @@ To change this template use File | Settings | File Templates.
         <h4>
             Enter coursework project details
         </h4>
+        <p>
+
         <div class="container">
             <form action="/save-coursework-project" method="post">
                 <div class="row">
@@ -155,8 +186,8 @@ To change this template use File | Settings | File Templates.
                 </div>
             </form>
 
+        </div>
     </div>
-</div>
 </div>
 <hr>
 <footer class="blog-footer" style="margin-left:500px">

@@ -10,33 +10,35 @@
 <html lang="en">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>SchedulerApp</title>
-  <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/assets/css/style.css"/>
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/auth.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
   <!-- google font  -->
   <link href='https://fonts.googleapis.com/css?family=Google+Sans:400,500&lang=en' rel='stylesheet' type='text/css'>
 </head>
 <body>
-<div class="login-page">
-  <div class="form">
-    <h1 style="color:#000000">SchedulerApp</h1>
-<%--    <div class="alert">--%>
-<%--      <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>--%>
-<%--       ${message}--%>
-<%--    </div>--%>
-    <form class="register-form">
-      <input type="text" placeholder="name"/>
-      <input type="password" placeholder="password"/>
-      <input type="text" placeholder="email address"/>
-      <button>create</button>
-      <p class="message">Already registered? <a href="#">Sign In</a></p>
-    </form>
-    <form action="/login-auth" class="login-form" method="post">
-      <input type="email"  name="email" placeholder="Email" required/>
-      <input type="password" name="password" placeholder="Password" required/>
-      <input type="submit" value="login" class="button" name="submit">
-      <p class="message">Not registered? <a href="/register">Create an account</a></p>
-    </form>
-  </div>
+<div class="login-form">
+  <form action="/login-auth" class="login-form" method="post">
+    <div class="avatar"><i class="material-icons">&#xE7FF;</i></div>
+    <h4 class="modal-title">Login to SchedulerApp</h4>
+    <div class="form-group">
+      <input type="email"  name="email" placeholder="Email" required class="form-control"/>
+          </div>
+    <div class="form-group">
+      <input type="password" class="form-control" name="password" placeholder="Password" required/>
+    </div>
+    <input type="submit" class="btn btn-primary btn-block btn-lg" value="login" name="submit">
+  </form>
+  <div class="text-center small">Don't have an account? <a href="/register">Sign up</a></div>
 </div>
 </body>
 </html>

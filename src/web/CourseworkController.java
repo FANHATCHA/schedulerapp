@@ -37,28 +37,12 @@ public class CourseworkController extends HttpServlet {
         try {
             switch (typeOfSubmission) {
                 case "Save Coursework":
-//                    showNewForm(request, response);
                     storeCoursework(request, response);
                     break;
-                case "/insert":
-                    storeCoursework(request, response);
-                    break;
-                case "/delete":
-                    // deleteTodo(request, response);
-                    storeCoursework(request, response);
-                    break;
-                case "/edit":
-                    // showEditForm(request, response);
-                    storeCoursework(request, response);
-                    break;
-                case "/update":
-//                    updateTodo(request, response);
-                    storeCoursework(request, response);
+                case "Update Coursework":
+                    updateCoursework(request, response);
                     break;
                 case "/list":
-//                    listTodo(request, response);
-                    storeCoursework(request, response);
-                    break;
                 default:
                     RequestDispatcher dispatcher = request.getRequestDispatcher("WEB-INF/login.jsp");
                     dispatcher.forward(request, response);
@@ -69,35 +53,46 @@ public class CourseworkController extends HttpServlet {
         }
     }
 
-//    protected void doGet(HttpServletRequest request, HttpServletResponse response)
-//            throws ServletException, IOException {
-//        String action = request.getServletPath();
-//
-//
-//    }
-
-
-    private void storeCoursework(HttpServletRequest request, HttpServletResponse response) throws SQLException, IOException, ParseException {
+    private void storeCoursework(HttpServletRequest request, HttpServletResponse response) throws SQLException, IOException, ParseException, ServletException {
 
         String courseworkTitle = request.getParameter("coursework-title");
         String moduleTitle = request.getParameter("module-title");
         int userID = 1;
-
-        System.out.println("333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333");
-        System.out.println(request.getParameter("intended-due-date"));
-
-//		DateTimeFormatter df = DateTimeFormatter.ofPattern("mm/dd/YYYY");
-//		LocalDate intendedDueDate = LocalDate.parse(request.getParameter("intended-due-date"),df);
-//        LocalDate actualCompletionDate = LocalDate.parse(request.getParameter("actual-completion-date"),df);
-
         Calendar intendedDueDate = JDBCUtils.getDateCalendar(request.getParameter("intended-due-date"));
         Calendar actualCompletionDate = JDBCUtils.getDateCalendar(request.getParameter("actual-completion-date"));
-        //boolean isDone = Boolean.valueOf(request.getParameter("isDone"));
+
         boolean isDone = false;
         CourseworkProject newCoursework = new CourseworkProject(courseworkTitle, moduleTitle, intendedDueDate, actualCompletionDate, userID, isDone);
         courseworkDAO.storeCoursework(newCoursework);
-        response.sendRedirect("list");
+
+        List<CourseworkProject> listCoursework = courseworkDAO.selectAllCourseworks();
+//        System.out.println(listCoursework);
+        request.setAttribute("listCoursework", listCoursework);
+        request.setAttribute("sizeOfCoursework", listCoursework.size());
+        this.getServletContext().getRequestDispatcher("/WEB-INF/dashboard.jsp").forward(request, response);
     }
+
+    private void updateCoursework(HttpServletRequest request, HttpServletResponse response) throws SQLException, IOException, ParseException, ServletException {
+        int id = Integer.parseInt(request.getParameter("id"));
+
+        String courseworkTitle = request.getParameter("coursework-title");
+        String moduleTitle = request.getParameter("module-title");
+        int userID = 1;
+        Calendar intendedDueDate = JDBCUtils.getDateCalendar(request.getParameter("intended-due-date"));
+        Calendar actualCompletionDate = JDBCUtils.getDateCalendar(request.getParameter("actual-completion-date"));
+
+        boolean isDone = false;
+
+        CourseworkProject updateCoursework = new CourseworkProject(courseworkTitle, moduleTitle, intendedDueDate, actualCompletionDate, userID, isDone);
+
+
+        courseworkDAO.updateCoursework(updateCoursework);
+        List<CourseworkProject> listCoursework = courseworkDAO.selectAllCourseworks();
+        request.setAttribute("listCoursework", listCoursework);
+        request.setAttribute("sizeOfCoursework", listCoursework.size());
+        this.getServletContext().getRequestDispatcher("/WEB-INF/dashboard.jsp").forward(request, response);
+    }
+
 
 
 

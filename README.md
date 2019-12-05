@@ -7,7 +7,7 @@ Scheduler Web app built using Java EE + MySQL + Tomcat + JSTL
 ## ABOUT SCHEDULER APP
 Problem Description: Coping with many coursework deliverables is a stressful part of every student’s life.SchedulerApp is a web-based which aims to help students cope with multiple coursework assignments.  
 The app allows the student to perform the following operations:
-### 1. ** Register to the app**
+### 1. Register to the app
 ![alt text](testing_screenshots/register_page.PNG)
 
 ### 2. Log In / Log Out
@@ -26,24 +26,21 @@ The app allows the student to perform the following operations:
 ![alt text](testing_screenshots/markAsCompleted.PNG)
 
 ## INSTALLATION PROCESS
-> 1 - Prerequisites
-```
-A - Have one of the following IDEA: Intellij IDEA, Eclipse, Netbeans etc
+> #### 1 - Prerequisites
+##### A - Have one of the following IDEA: Intellij IDEA, Eclipse, Netbeans etc
+##### B - Have XAMPP or phpMyAdmin installed (Not required). You can other DBMS however make sure you have the right driver.
 
-B-  Have XAMPP or phpMyAdmin installed (Not required)
-```
 ![alt text](testing_screenshots/xampp.PNG)
 
 ![alt text](testing_screenshots/phpmyadmin.PNG)
 
-```
-C-  Have Tomcat server setted up with you Intellij IDEA
-```
+##### C -  Have Tomcat server running with your Intellij IDEA
+
 ![alt text](testing_screenshots/tomcat.PNG)
 
 ![alt text](testing_screenshots/tomcat_deployment.PNG)
 
-> 2 - Clone the repo using the following command
+> ### 2 - Clone the repo using the following command
 ```cmd
 git clone https://github.com/FANHATCHA/schedulerapp.git
 ```

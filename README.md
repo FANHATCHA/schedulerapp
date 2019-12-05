@@ -4,28 +4,28 @@ Scheduler Web app built using Java EE + MySQL + Tomcat + JSTL
 
 ![alt text](testing_screenshots/logout.png)
 
-#ABOUT SCHEDULER APP
+## ABOUT SCHEDULER APP
 Problem Description: Coping with many coursework deliverables is a stressful part of every student’s life.SchedulerApp is a web-based which aims to help students cope with multiple coursework assignments.  
 The app allows the student to perform the following operations:
-###### 1. ** Register to the app**
+### 1. ** Register to the app**
 ![alt text](testing_screenshots/register_page.PNG)
 
-###### 2. Log In / Log Out
+### 2. Log In / Log Out
 ![alt text](testing_screenshots/login.PNG)
 
-###### 3. Coursework projects (Create - Update - Edit - Delete)
+### 3. Coursework projects (Create - Update - Edit - Delete)
 ![alt text](testing_screenshots/logout.png)
 
 ![alt text](testing_screenshots/create_new_coursework.PNG)
 ![alt text](testing_screenshots/edit_coursework.PNG)
 
-###### 4. Add a list of milestones to the coursework projects
+### 4. Add a list of milestones to the coursework projects
 ![alt text](testing_screenshots/added_milestones.PNG)
 
-###### 5. mark a milestone a completed or not
+### 5. mark a milestone a completed or not
 ![alt text](testing_screenshots/markAsCompleted.PNG)
 
-#INSTALLATION PROCESS
+## INSTALLATION PROCESS
 > 1 - Prerequisites
 ```
 A - Have one of the following IDEA: Intellij IDEA, Eclipse, Netbeans etc

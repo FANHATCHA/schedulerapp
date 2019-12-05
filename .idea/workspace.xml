@@ -7,15 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1892f263-73f7-4146-b47c-8146f04f3325" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/Model/Milestones.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/Model/Milestones.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/UserDataProcessing/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/UserDataProcessing/LoginController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/app/DAOImpl/MilestonesDAOImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/app/Model/Milestones.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/app/UserDataProcessing/LoginController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/app/web/Milestone.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/app/web/MilestonesController.class" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -201,7 +193,7 @@
       <workItem from="1573696945903" duration="51867000" />
       <workItem from="1574312380922" duration="6371000" />
       <workItem from="1574496491147" duration="44224000" />
-      <workItem from="1575290610328" duration="82129000" />
+      <workItem from="1575290610328" duration="82381000" />
     </task>
     <servers />
   </component>

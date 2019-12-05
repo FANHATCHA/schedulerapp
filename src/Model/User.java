@@ -4,9 +4,34 @@ import java.io.Serializable;
 
 public class User implements Serializable {
     private static final long serialVersionUID = 1L;
+    private long id;
     private String name;
     private String email;
     private String password;
+
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
+    }
+
+    public User(long id, String email, String name) {
+        this.id = id;
+        this.email = email;
+        this.name = name;
+    }
+
+    public User() {
+
+    }
+    public User(long id, String email, String name, String password) {
+        this.id = id;
+        this.email = email;
+        this.name = name;
+        this.password = password;
+    }
 
     public String getName() {
         return name;

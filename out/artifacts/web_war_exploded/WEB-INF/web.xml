@@ -81,5 +81,41 @@
         <url-pattern>/edit-coursework-project</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>LogOutController</servlet-name>
+        <servlet-class>UserDataProcessing.LogOutController</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>LogOutController</servlet-name>
+        <url-pattern>/logout</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Milestone</servlet-name>
+        <servlet-class>web.Milestone</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Milestone</servlet-name>
+        <url-pattern>/add-milestones-to-coursework</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>MilestonesController</servlet-name>
+        <servlet-class>web.MilestonesController</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>MilestonesController</servlet-name>
+        <url-pattern>/milestone</url-pattern>
+    </servlet-mapping>
+
+
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
 
 </web-app>

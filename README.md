@@ -4,11 +4,11 @@ Scheduler Web app built using Java EE + MySQL + Tomcat + JSTL
 
 ![alt text](testing_screenshots/logout.PNG)
 
-##ABOUT SCHEDULER APP
+###ABOUT SCHEDULER APP
 Problem Description: Coping with many coursework deliverables is a stressful part of every student’s life.SchedulerApp is a web-based which aims to help students cope with multiple coursework assignments.  
 The app allows the student to perform the following operations:
 ###### 1. Register to the app
-![alt text](testing_screenshots/register_page.PNG)
+![alt text](testing_screenshots/register_page.png)
 
 ###### 2. Log In / Log Out
 ![alt text](testing_screenshots/login.PNG)

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 03, 2019 at 08:46 PM
+-- Generation Time: Dec 05, 2019 at 04:53 PM
 -- Server version: 10.1.38-MariaDB
 -- PHP Version: 7.3.3
 
@@ -43,11 +43,11 @@ CREATE TABLE `coursework_projects` (
 --
 
 INSERT INTO `coursework_projects` (`id`, `courseworkTitle`, `moduleTitle`, `intended_due_date`, `actual_completion_date`, `is_done`, `user_id`) VALUES
-(37, 'AADP Individual Work', 'Machine Learning', '11/19/2019', '11/19/2019', b'0', 1),
-(38, 'AADP Individual Work', 'fg', '11/14/2019', '11/08/2019', b'0', 1),
-(39, 'new lab', 'dev', '11/22/2019', '11/14/2019', b'0', 1),
-(40, 'fr', 'rt', '11/13/2019', '11/19/2019', b'0', 1),
-(41, 'Big Data coursework 9', 'Web dev 10', '11/18/2019', '11/12/2019', b'0', 1);
+(46, 'AADP Individual Work Edited', 'AADP Edited', '11/12/2019', '11/12/2019', b'0', 8),
+(48, 'Socket programming in C', 'System programming module', '12/06/2019', '12/01/2019', b'0', 8),
+(49, ' BFS and DFS using interation', 'Data Structures and Algorithm', '11/20/2019', '11/03/2019', b'0', 8),
+(50, 'Safe Delete using Bash Script', 'System programming module', '11/13/2019', '11/03/2019', b'0', 8),
+(51, 'Programming with C#', 'Pointers with C#', '01/01/2020', '12/05/2019', b'0', 8);
 
 -- --------------------------------------------------------
 
@@ -58,10 +58,21 @@ INSERT INTO `coursework_projects` (`id`, `courseworkTitle`, `moduleTitle`, `inte
 CREATE TABLE `milestones` (
   `id` bigint(20) UNSIGNED NOT NULL,
   `milestones` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `is_completed` int(3) NOT NULL,
   `user_id` bigint(20) UNSIGNED NOT NULL,
-  `coursework_id` bigint(20) UNSIGNED NOT NULL,
-  `is_completed` bit(1) NOT NULL
+  `coursework_id` bigint(20) UNSIGNED NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `milestones`
+--
+
+INSERT INTO `milestones` (`id`, `milestones`, `is_completed`, `user_id`, `coursework_id`) VALUES
+(33, 'Create wireframe', 0, 8, 46),
+(34, 'Setup VMware virtual machine', 1, 8, 48),
+(35, 'Install Linux mint', 0, 8, 48),
+(36, 'Implement the main functions', 0, 8, 48),
+(37, 'Read the C for dummies book chapter3', 1, 8, 48);
 
 -- --------------------------------------------------------
 
@@ -81,7 +92,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `email`, `password`) VALUES
-(1, 'Kone Fanhatcha', 'fanhatcha@gmail.com', '000000');
+(8, 'Kone Fanhatcha', 'fanhatcha@gmail.com', '$2a$12$zw4yDctB3sAp10AUGLFBPebs986WWseSsS5B2QemFaDJRirHHbsQG');
 
 --
 -- Indexes for dumped tables
@@ -117,19 +128,19 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `coursework_projects`
 --
 ALTER TABLE `coursework_projects`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=42;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=52;
 
 --
 -- AUTO_INCREMENT for table `milestones`
 --
 ALTER TABLE `milestones`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=39;
 
 --
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- Constraints for dumped tables

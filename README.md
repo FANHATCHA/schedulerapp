@@ -40,8 +40,23 @@ The app allows the student to perform the following operations:
 
 ![alt text](testing_screenshots/tomcat_deployment.PNG)
 
-> ### 2 - Clone the repo using the following command
+> #### 2 - Clone the repo using the following command
 ```cmd
 git clone https://github.com/FANHATCHA/schedulerapp.git
 ```
+ > #### 3 - Import database in phpMyAdmin or other DBMS installed in your system
+ ##### A - Make sur your have the **db.sql** file in the directory you have just clone
+ 
+ ![alt text](testing_screenshots/db_location.PNG)
+ 
+ ##### B - Open your phpMyAdmin and follow the step highlighted in red to create a new database
+ ![alt text](testing_screenshots/create_db_name.PNG)
+ 
+ ##### C - Import the **db.sql** file into your newly created database
+ 
+![alt text](testing_screenshots/browse_sql.PNG)
+
+##### D - If you have followed the same steps as me, you will open the following result
+
+![alt text](testing_screenshots/result_after_importing.PNG)
  

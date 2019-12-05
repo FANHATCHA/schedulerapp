@@ -7,68 +7,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1892f263-73f7-4146-b47c-8146f04f3325" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/DAO/MilestonesDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DAOImpl/MilestonesDAOImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Model/Milestones.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/UserDataProcessing/LogOutController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utilities/BCrypt.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/web/Milestone.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/web/MilestonesController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/footer.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/header.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/meta-head.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/milestones.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sql" beforeDir="false" afterPath="$PROJECT_DIR$/db.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/DAO/CourseworkProjectDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/DAO/CourseworkProjectDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/DAO/LoginDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/DAO/LoginDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/DAO/UserDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/DAO/UserDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/DAOImpl/CourseworkProjectDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/DAOImpl/CourseworkProjectDAOImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/DAOImpl/UserDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/DAOImpl/UserDAOImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/Model/CourseworkProject.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/Model/CourseworkProject.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/Model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/Model/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/UserDataProcessing/DeleteCourseworkController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/UserDataProcessing/DeleteCourseworkController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/UserDataProcessing/EditCourseworkController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/UserDataProcessing/EditCourseworkController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/Model/Milestones.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/Model/Milestones.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/UserDataProcessing/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/UserDataProcessing/LoginController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/UserDataProcessing/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/UserDataProcessing/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/web/CourseworkController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/web/CourseworkController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/web/Dashboard.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/web/Dashboard.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/coursework-form.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/coursework-form.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/dashboard.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/dashboard.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/assets/css/dashboard.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/web_war_exploded/assets/css/dashboard.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/web_war_exploded/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/app/DAO/CourseworkProjectDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/app/DAO/CourseworkProjectDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/app/DAO/LoginDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/app/DAO/LoginDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/app/DAO/UserDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/app/DAO/UserDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/app/DAOImpl/CourseworkProjectDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/app/DAOImpl/CourseworkProjectDAOImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/app/DAOImpl/UserDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/app/DAOImpl/UserDAOImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/app/Model/CourseworkProject.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/app/Model/CourseworkProject.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/app/Model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/app/Model/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/app/UserDataProcessing/DeleteCourseworkController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/app/UserDataProcessing/DeleteCourseworkController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/app/UserDataProcessing/EditCourseworkController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/app/UserDataProcessing/EditCourseworkController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/app/UserDataProcessing/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/app/UserDataProcessing/LoginController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/app/UserDataProcessing/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/app/UserDataProcessing/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/app/web/CourseworkController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/app/web/CourseworkController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/app/web/Dashboard.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/app/web/Dashboard.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DAO/CourseworkProjectDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DAO/CourseworkProjectDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DAO/LoginDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DAO/LoginDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DAO/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DAO/UserDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DAOImpl/CourseworkProjectDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DAOImpl/CourseworkProjectDAOImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DAOImpl/UserDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DAOImpl/UserDAOImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/CourseworkProject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/CourseworkProject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UserDataProcessing/DeleteCourseworkController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UserDataProcessing/DeleteCourseworkController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UserDataProcessing/EditCourseworkController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UserDataProcessing/EditCourseworkController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UserDataProcessing/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UserDataProcessing/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UserDataProcessing/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UserDataProcessing/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/web/CourseworkController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/web/CourseworkController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/web/Dashboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/web/Dashboard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/coursework-form.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/coursework-form.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/dashboard.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/dashboard.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/assets/css/dashboard.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/css/dashboard.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/app/DAOImpl/MilestonesDAOImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/app/Model/Milestones.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/app/UserDataProcessing/LoginController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/app/web/Milestone.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/app/web/MilestonesController.class" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -254,7 +201,7 @@
       <workItem from="1573696945903" duration="51867000" />
       <workItem from="1574312380922" duration="6371000" />
       <workItem from="1574496491147" duration="44224000" />
-      <workItem from="1575290610328" duration="78400000" />
+      <workItem from="1575290610328" duration="82129000" />
     </task>
     <servers />
   </component>
@@ -301,11 +248,6 @@
           <url>file://$PROJECT_DIR$/web/WEB-INF/milestones.jsp</url>
           <line>133</line>
           <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/DAOImpl/MilestonesDAOImpl.java</url>
-          <line>43</line>
-          <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/web/WEB-INF/milestones.jsp</url>

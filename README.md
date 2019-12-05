@@ -56,7 +56,7 @@ git clone https://github.com/FANHATCHA/schedulerapp.git
  
 ![alt text](testing_screenshots/browse_sql.PNG)
 
-##### D - If you have followed the same steps as me, you will open the following result
+##### D - If you have followed the same steps as me, you will have the following result
 
 ![alt text](testing_screenshots/result_after_importing.PNG)
  

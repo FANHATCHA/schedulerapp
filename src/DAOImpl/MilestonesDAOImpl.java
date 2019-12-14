@@ -18,7 +18,7 @@ public class MilestonesDAOImpl implements MilestonesDAO {
 
     private static final String INSERT_MILESTONE_SQL = "INSERT INTO milestones"
             + "  (milestones,user_id,coursework_id,is_completed) VALUES " + " (?, ?, ?, ?);";
-    private static final String SELECT_MILESTONES_BY_COURSEWORK_SQL = "SELECT id, milestones, coursework_id, user_id, is_completed FROM milestones where user_id =? AND coursework_id=?";
+    private static final String SELECT_MILESTONES_BY_COURSEWORK_SQL = "SELECT id, milestones, coursework_id, user_id, is_completed FROM milestones where user_id =? AND coursework_id=? ORDER BY milestones.id DESC";
 
     private static final String MARK_AS_COMPLETED_SQL = "UPDATE milestones SET is_completed = ? where id = ? AND user_id = ? AND coursework_id=?";
 

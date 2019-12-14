@@ -22,7 +22,7 @@ public class CourseworkProjectDAOImpl implements CourseworkProjectDAO  {
 
     private static final String SELECT_COURSEWORK_BY_ID = "SELECT id,courseworkTitle,moduleTitle,user_id,intended_due_date,actual_completion_date,is_done FROM coursework_projects where id =?";
     private static final String SELECT_ALL_COURSEWORKS = "SELECT * FROM coursework_projects";
-    private static final String SELECT_COURSEWORKS_BY_USERID = "SELECT *  FROM coursework_projects INNER JOIN users ON coursework_projects.user_id=users.id where users.email =?";
+    private static final String SELECT_COURSEWORKS_BY_USERID = "SELECT *  FROM coursework_projects INNER JOIN users ON coursework_projects.user_id=users.id where users.email =? ORDER BY coursework_projects.id DESC";
     private static final String FETCH_BY_UNIQUE_EMAIL = "SELECT name, id, email, password FROM users where email =?";
     private static final String DELETE_COURSEWORK_BY_ID = "DELETE FROM coursework_projects where id = ?";
     private static final String UPDATE_COURSEWORK = "UPDATE coursework_projects SET courseworkTitle = ?, moduleTitle= ?, user_id =?, intended_due_date =?, actual_completion_date =?, is_done = ? where id = ?;";

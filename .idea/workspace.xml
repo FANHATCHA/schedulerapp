@@ -8,8 +8,7 @@
   <component name="ChangeListManager">
     <list default="true" id="1892f263-73f7-4146-b47c-8146f04f3325" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testing_screenshots/browse_intelij.PNG" beforeDir="false" afterPath="$PROJECT_DIR$/testing_screenshots/browse_intelij.PNG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DAOImpl/CourseworkProjectDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DAOImpl/CourseworkProjectDAOImpl.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -196,7 +195,8 @@
       <workItem from="1573696945903" duration="51867000" />
       <workItem from="1574312380922" duration="6371000" />
       <workItem from="1574496491147" duration="44224000" />
-      <workItem from="1575290610328" duration="86696000" />
+      <workItem from="1575290610328" duration="89358000" />
+      <workItem from="1576141991493" duration="862000" />
     </task>
     <servers />
   </component>

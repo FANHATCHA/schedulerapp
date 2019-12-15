@@ -60,7 +60,7 @@ git clone https://github.com/FANHATCHA/schedulerapp.git
 
 ![alt text](testing_screenshots/result_after_importing.PNG)
  
-##### E - Finally click on the run icon to launch the app
+##### E - Finally import the files into your Intellij IDEA and click on the run icon to launch the app
 
 ![alt text](testing_screenshots/browse_intelij.PNG)
 
@@ -70,4 +70,4 @@ This app has been designed and build by:
 + [Kone Fanhatcha ](https://www.linkedin.com/in/konefanhatcha/)
 + Kevin Bofelo
 + Faith Mbithe
-+ Andrew Minja
++ [Andrew Minja ](https://www.linkedin.com/in/andrew-minja-728a92ba/)

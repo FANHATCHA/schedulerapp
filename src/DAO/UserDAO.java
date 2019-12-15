@@ -2,7 +2,9 @@ package DAO;
 
 import Model.User;
 
-public interface UserDAO {
+import java.sql.SQLException;
 
-    public int registerUser(User user);
+public interface UserDAO  {
+
+    public int registerUser(User user) throws ClassNotFoundException;
 }

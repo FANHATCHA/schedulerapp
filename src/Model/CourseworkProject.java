@@ -17,7 +17,6 @@ public class CourseworkProject {
     }
 
     public CourseworkProject(long id, String courseworkTitle, String moduleTitle, Calendar intendedDueDate, Calendar actualCompletionDate, int userID, boolean isDone) {
-        super();
         this.id = id;
         this.courseworkTitle = courseworkTitle;
         this.moduleTitle = moduleTitle;
@@ -28,7 +27,6 @@ public class CourseworkProject {
     }
 
     public CourseworkProject(String courseworkTitle, String moduleTitle, Calendar intendedDueDate, Calendar actualCompletionDate, int userID, boolean isDone) {
-        super();
         this.courseworkTitle = courseworkTitle;
         this.moduleTitle = moduleTitle;
         this.intendedDueDate = intendedDueDate;
@@ -36,6 +34,7 @@ public class CourseworkProject {
         this.userID = userID;
         this.status = isDone;
     }
+
 
     public Long getId() {
         return id;

@@ -6,7 +6,10 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1892f263-73f7-4146-b47c-8146f04f3325" name="Default Changelist" comment="" />
+    <list default="true" id="1892f263-73f7-4146-b47c-8146f04f3325" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/footer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/footer.jsp" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -193,7 +196,7 @@
       <workItem from="1574312380922" duration="6371000" />
       <workItem from="1574496491147" duration="44224000" />
       <workItem from="1575290610328" duration="89358000" />
-      <workItem from="1576141991493" duration="5640000" />
+      <workItem from="1576141991493" duration="12020000" />
     </task>
     <servers />
   </component>
@@ -217,11 +220,6 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/web/WEB-INF/dashboard.jsp</url>
-          <line>91</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/DAOImpl/CourseworkProjectDAOImpl.java</url>
           <line>84</line>
           <option name="timeStamp" value="3" />
@@ -230,26 +228,6 @@
           <url>file://$PROJECT_DIR$/src/DAOImpl/CourseworkProjectDAOImpl.java</url>
           <line>52</line>
           <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/web/WEB-INF/dashboard.jsp</url>
-          <line>8</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/web/WEB-INF/milestones.jsp</url>
-          <line>133</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/web/WEB-INF/milestones.jsp</url>
-          <line>49</line>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/web/WEB-INF/milestones.jsp</url>
-          <line>85</line>
-          <option name="timeStamp" value="10" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -1,6 +1,6 @@
 <footer class="blog-footer" style="margin-left:500px">
     <br>
-    &copy; copyright 2019 schedulerApp | <a href="https://github.com/FANHATCHA/schedulerapp" target="_blank">visit Github></a>
+    &copy; copyright 2019 schedulerApp | <a href="https://github.com/FANHATCHA/schedulerapp" target="_blank">Visit Github Repository</a>
 </footer>
 </body>
 <script>
